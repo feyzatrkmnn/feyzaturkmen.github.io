@@ -26,7 +26,7 @@
         
         .card { 
             position: relative; 
-            height: 420px; /* Kart yüksekliğini görsellerin daha iyi sığması için optimize ettik */
+            height: 420px; 
             overflow: hidden; 
             display: flex; 
             align-items: flex-end; 
@@ -35,20 +35,12 @@
             transition: 0.6s ease; 
             border: 1px solid #eee;
         }
-<a href="marsan.html" class="card">
-    <div class="card-bg" style="background-image: url('marsan.png');"></div>
-    <div class="card-overlay"></div>
-    <div class="card-content">
-        <h3>Billère Farmer Market</h3>
-        <p>Pierre Marsan / Heavy-Light Material Analysis</p>
-        <div class="view-btn">Projeyi İncele</div>
-    </div>
-</a>
+
         .card-bg {
             position: absolute; 
             top: 0; left: 0; width: 100%; height: 100%;
             background-size: cover; 
-            background-position: center 30%; /* Görselin üst kısımlarına odaklanarak paftayı daha iyi gösterir */
+            background-position: center 30%; 
             transition: 0.8s ease; 
             z-index: 1;
         }
@@ -97,6 +89,16 @@
             <div class="card-content">
                 <h3>Perelman Center</h3>
                 <p>REX / Mekânsal Kurgu ve Cephe Tasarımı</p>
+                <div class="view-btn">Projeyi İncele</div>
+            </div>
+        </a>
+
+        <a href="marsan.html" class="card">
+            <div class="card-bg" style="background-image: url('marsan.png');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+                <h3>Billère Farmer Market</h3>
+                <p>Pierre Marsan / Heavy-Light Material Analysis</p>
                 <div class="view-btn">Projeyi İncele</div>
             </div>
         </a>
