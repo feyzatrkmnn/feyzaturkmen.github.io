@@ -22,7 +22,25 @@
             display: block; 
             margin: 0; /* Boşlukları sıfırlar */
         }
-    </style>
+   <style>
+    body { margin: 0; padding: 0; background: #f4f4f4; } /* Arka planı çok hafif gri yaptık ki paftalar belli olsun */
+    
+    .nav-bar { position: fixed; top: 0; width: 100%; background: white; padding: 20px; text-align: center; z-index: 1000; border-bottom: 1px solid #ddd; }
+    .nav-bar a { text-decoration: none; color: #1a2f23; font-weight: bold; letter-spacing: 2px; font-size: 12px; }
+
+    .project-flow { 
+        max-width: 1000px; /* Kenarlardan boşluk bırakmak için genişliği sınırladık */
+        margin: 100px auto; /* Sayfayı ortaladık ve üstten boşluk bıraktık */
+        background: white; 
+        box-shadow: 0 0 50px rgba(0,0,0,0.05); 
+    }
+
+    .project-flow img { 
+        width: 100%; 
+        height: auto; 
+        display: block; 
+        margin-bottom: 40px; /* Paftalar arasına boşluk koyduk */
+    }
 </head>
 <body>
 
