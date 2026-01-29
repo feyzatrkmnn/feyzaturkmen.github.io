@@ -5,75 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feyza Türkmen | Mimarlık Portfolyosu</title>
     <style>
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; background-color: #fafafa; }
-        header { padding: 80px 20px; text-align: center; background: #fff; border-bottom: 1px solid #eee; }
-        header h1 { margin: 0; font-weight: 300; letter-spacing: 2px; text-transform: uppercase; }
-        header p { color: #888; font-style: italic; }
-        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
-        .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-        .project-card { background: #fff; border: 1px solid #eee; padding: 20px; transition: 0.3s; }
-        .project-card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-        .project-card h3 { margin-top: 0; font-weight: 400; color: #222; }
-        .project-card p { font-size: 0.9em; color: #666; }
-        footer { text-align: center; padding: 40px; color: #aaa; font-size: 0.8em; }
-        @media (max-width: 768px) { .project-grid { grid-template-columns: 1fr; } }
+        /* Modern ve Minimalist Mimari Stil */
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; background: #fafafa; color: #222; }
+        header { padding: 100px 20px; text-align: center; background: #fff; border-bottom: 1px solid #eee; }
+        header h1 { font-weight: 200; letter-spacing: 5px; text-transform: uppercase; margin: 0; font-size: 2.5em; }
+        header p { color: #999; font-size: 0.9em; letter-spacing: 2px; margin-top: 10px; }
+        
+        .container { max-width: 1100px; margin: 60px auto; padding: 0 20px; }
+        
+        /* Proje Kartları Düzeni */
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .card { background: #fff; border: 1px solid #eee; transition: all 0.4s ease; position: relative; overflow: hidden; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.05); }
+        
+        .card-content { padding: 30px; }
+        .card h3 { font-weight: 400; margin: 0 0 15px 0; letter-spacing: 1px; text-transform: uppercase; font-size: 1.1em; }
+        .card p { font-size: 0.85em; color: #666; line-height: 1.6; margin-bottom: 25px; height: 50px; overflow: hidden; }
+        
+        .btn { 
+            display: inline-block; padding: 12px 25px; background: #000; color: #fff; 
+            text-decoration: none; font-size: 0.75em; letter-spacing: 2px; 
+            text-transform: uppercase; transition: 0.3s; 
+        }
+        .btn:hover { background: #444; }
+        
+        footer { text-align: center; padding: 80px 20px; color: #ccc; font-size: 0.8em; letter-spacing: 1px; }
+        
+        @media (max-width: 768px) { header { padding: 60px 20px; } .project-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
 <header>
     <h1>FEYZA TÜRKMEN</h1>
-    <p>Mimarlık Öğrencisi & Tasarımcı</p>
+    <p>Architecture Student | Portfolyo</p>
 </header>
 
-
-     <!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <title>Oslo Opera House - Feyza Türkmen</title>
-    <style>
-        body { margin: 0; padding: 0; background: #222; font-family: 'Helvetica Neue', Arial, sans-serif; overflow: hidden; }
-        .nav-bar { 
-            background: white; 
-            padding: 15px 25px; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-            position: relative;
-            z-index: 10;
-        }
-        .nav-bar a { text-decoration: none; color: #333; font-weight: 500; font-size: 0.9em; }
-        .nav-bar span { font-size: 0.9em; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .pdf-frame { width: 100%; height: calc(100vh - 50px); border: none; }
-    </style>
-</head>
-<body>
-   <div class="nav-bar">
-    <a href="./index.html">← PORTFOLYOYA DÖN</a>
-    <span>Oslo Opera House Sunumu</span>
-</div>
-        <div class="project-card">
-            <h3>Perelman Performing Arts Center</h3>
-            <p>New York'taki bu performans merkezinin esnek iç mekan kurgusu ve cephe tasarımı üzerine yapılan detaylı analiz çalışması.</p>
-            <a href="FT_Perelman Performıng Arts Center_compressed.pdf" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; background: #333; color: #fff; text-decoration: none; border-radius: 4px; font-size: 0.8em;">Sunumu Görüntüle (PDF)</a>
+<div class="container">
+    <div class="project-grid">
+        
+        <div class="card">
+            <div class="card-content">
+                <h3>Oslo Opera House</h3>
+                <p>Snøhetta tasarımı yapının kentsel süreklilik, malzeme kullanımı ve kamusal alan analizleri.</p>
+                <a href="oslo-opera.html" class="btn">Projeyi İncele</a>
+            </div>
         </div>
 
-        <div class="project-card">
-            <h3>Kentsel Analiz: Taksim - Galata</h3>
-            <p>Taksim'den Galata'ya uzanan rota üzerinde hazırlanan detaylı mental harita ve kentsel tasarım analizi.</p>
+        <div class="card">
+            <div class="card-content">
+                <h3>Perelman Performing Arts Center</h3>
+                <p>Esnek iç mekan kurgusu ve mermer cephe tasarımının mekansal deneyime etkisi.</p>
+                <a href="#" class="btn">Yakında</a>
+            </div>
         </div>
 
-        <div class="project-card">
-            <h3>Rovaniemi Kütüphanesi Analizi</h3>
-            <p>Alvar Aalto'nun ikonik eserlerinden Rovaniemi Kütüphanesi üzerine yapılan mekansal ve mimari analiz çalışması.</p>
+        <div class="card">
+            <div class="card-content">
+                <h3>Taipei Performing Arts Center</h3>
+                <p>OMA'nın kentsel ölçekteki yenilikçi performans merkezi tasarımı üzerine inceleme.</p>
+                <a href="#" class="btn">Yakında</a>
+            </div>
         </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>Urfa Karma Kullanım</h3>
+                <p>Urfa'da avlulu tipoloji ile modern ihtiyaçları birleştiren 3 katlı mimari tasarım.</p>
+                <a href="#" class="btn">Yakında</a>
+            </div>
+        </div>
+
     </div>
 </div>
 
 <footer>
-    &copy; 2026 Feyza Türkmen. Tüm hakları saklıdır.
+    &copy; 2026 FEYZA TÜRKMEN. ALL RIGHTS RESERVED.
 </footer>
 
 </body>
