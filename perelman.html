@@ -4,36 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perelman Performing Arts Center - Feyza Türkmen</title>
-  <style>
-    body { margin: 0; padding: 0; background: #f4f4f4; } /* Arka planı çok hafif gri yaptık ki paftalar belli olsun */
-    
-    .nav-bar { position: fixed; top: 0; width: 100%; background: white; padding: 20px; text-align: center; z-index: 1000; border-bottom: 1px solid #ddd; }
-    .nav-bar a { text-decoration: none; color: #1a2f23; font-weight: bold; letter-spacing: 2px; font-size: 12px; }
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0; 
+            background: #f4f4f4; 
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
 
-    .project-flow { 
-        max-width: 1000px; /* Kenarlardan boşluk bırakmak için genişliği sınırladık */
-        margin: 100px auto; /* Sayfayı ortaladık ve üstten boşluk bıraktık */
-        background: white; 
-        box-shadow: 0 0 50px rgba(0,0,0,0.05); 
-    }
+        /* Sabit Geri Dön Butonu */
+        .back-nav { 
+            position: fixed; 
+            top: 20px; 
+            left: 20px; 
+            z-index: 999;
+            background: rgba(26, 47, 35, 0.9); /* Koyu yeşil tonun */
+            color: white; 
+            padding: 12px 25px;
+            text-decoration: none; 
+            font-size: 11px;
+            letter-spacing: 2px; 
+            border-radius: 50px; 
+            text-transform: uppercase;
+            backdrop-filter: blur(5px);
+            transition: 0.3s;
+        }
+        .back-nav:hover { background: #000; }
 
-    .project-flow img { 
-        width: 100%; 
-        height: auto; 
-        display: block; 
-        margin-bottom: 40px; /* Paftalar arasına boşluk koyduk */
-    }
-</style>
+        /* Paftaların Akış Alanı */
+        .project-flow { 
+            max-width: 1100px; 
+            margin: 80px auto; 
+            background: white; 
+            padding: 40px 0;
+            box-shadow: 0 0 50px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .project-flow img { 
+            width: 90%; 
+            height: auto; 
+            display: block; 
+            margin-bottom: 50px; 
+        }
+
+        .project-flow img:last-child { margin-bottom: 0; }
+    </style>
 </head>
 <body>
 
-    <a href="index.html" class="back-nav">← GERİ DÖN</a>
+    <a href="index.html" class="back-nav">← PORTFOLYOYA DÖN</a>
 
-    <div class="project-container">
+    <div class="project-flow">
         <img src="per_1.jpg">
         <img src="per_2.jpg">
         <img src="per_3.jpg">
-        <img src="per_4.jpg"> 
+        <img src="per_4.jpg">
         <img src="per_5.jpg">
         <img src="per_6.jpg">
         <img src="per_7.jpg">
@@ -44,10 +72,10 @@
         <img src="per_12.jpg">
         <img src="per_13.jpg">
         <img src="per_14.jpg">
-        <img src="per_15.jpg"> 
+        <img src="per_15.jpg">
         <img src="per_16.jpg">
-        <img src="per_17.jpg"> 
-        <img src="per_18.jpg"> 
+        <img src="per_17.jpg">
+        <img src="per_18.jpg">
         <img src="per_19.jpg">
         <img src="per_20.jpg">
     </div>
