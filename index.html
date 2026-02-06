@@ -34,20 +34,21 @@
             color: white; 
             transition: 0.6s ease; 
             border: 1px solid #eee;
+            background-color: #eee; /* Görsel yüklenene kadar boş kalmasın */
         }
 
         .card-bg {
             position: absolute; 
             top: 0; left: 0; width: 100%; height: 100%;
-            background-size: cover; 
-            background-position: center 30%; 
+            background-size: cover; /* Görseli kutuya yayar */
+            background-position: center center; /* Görseli her zaman tam ortalar */
             transition: 0.8s ease; 
             z-index: 1;
         }
 
         .card-overlay {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(to top, rgba(26, 47, 35, 0.95) 10%, transparent 100%);
+            background: linear-gradient(to top, rgba(26, 47, 35, 0.95) 15%, transparent 100%);
             z-index: 2;
         }
 
@@ -104,10 +105,21 @@
         </a>
 
         <a href="taipei.html" class="card">
-            <div class="card-bg" style="background-image: url('1.jpg');"></div> <div class="card-overlay"></div>
+            <div class="card-bg" style="background-image: url('1.jpg');"></div>
+            <div class="card-overlay"></div>
             <div class="card-content">
                 <h3>TAIPEI PERFORMING ARTS</h3>
                 <p>OMA / Programatik Analiz ve Kamusal Döngü</p>
+                <div class="view-btn">Projeyi İncele</div>
+            </div>
+        </a>
+
+        <a href="haus-der-musik.html" class="card">
+            <div class="card-bg" style="background-image: url('malzeme2_1.png');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+                <h3>HAUS DER MUSIK INNSBRUCK</h3>
+                <p>ARCH 212 / Detail Analysis - System Integration</p>
                 <div class="view-btn">Projeyi İncele</div>
             </div>
         </a>
